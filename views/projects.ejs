@@ -1,0 +1,68 @@
+<!----------------------------------------------------------------------------------------->
+<!----------------------------Esau Maldonado Aguiar 301267933------------------------------>
+<!----------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <link rel="stylesheet" href="/css/style-nav.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+
+</head>
+<body>
+  <%- include('partials/navbar') %>
+  <div id="projects-container">
+    <!-- GyroLED Project -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/images/gyroled.jpg" alt="GyroLED Project">
+      </div>
+      <div class="project-info">
+        <h2>GyroLED Project</h2>
+        <p>
+          Developed a GyroLED system for spatial orientation sensing.
+          My role: Hardware and Software Engineer
+          Outcome: Implemented a robust system with precise sensing capabilities.
+        </p>
+      </div>
+    </div>
+
+    <!-- Robotic Arm Project -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/images/robotic_arm.jpg" alt="Robotic Arm Project">
+      </div>
+      <div class="project-info">
+        <h2>Robotic Arm Project</h2>
+        <p>
+          Designed and built a robotic arm with multiple degrees of freedom.
+          My role: Mechanical and Control Systems Engineer
+          Outcome: Successfully created a versatile robotic arm for various applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- First Centennial HTML Project -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="/images/centennial_project.jpg" alt="First Centennial HTML Project">
+      </div>
+      <div class="project-info">
+        <h2>First Centennial HTML Project</h2>
+        <p>
+          Created my first website using HTML during my first web design class.
+          My role: Web Developer
+          Outcome: Launched a simple and engaging website for the Centennial.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

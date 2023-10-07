@@ -1,0 +1,62 @@
+<!----------------------------------------------------------------------------------------->
+<!----------------------------Esau Maldonado Aguiar 301267933------------------------------>
+<!----------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style-footer.css">
+  <link rel="stylesheet" href="/css/style-contact.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+
+
+</head>
+<body>
+  <%- include('partials/navbar') %>
+  <h1>Contact Me</h1>
+
+  <div id="contact-content">
+    <div id="contact-info">
+      <h2 style="margin-left: 5%;">Contact Information</h2>
+      <p style="margin-left: 5%;">
+        Feel free to reach out to me using the following contact information:
+      </p>
+      <ul>
+        <li>Email: your.email@example.com</li>
+        <li>Contact Number: +1 123-456-7890</li>
+        <li>Address: Your Street, City, Country</li>
+      </ul>
+    </div>
+
+    <div id="contact-form">
+      <p>Send me a message using the form below:</p>
+      
+      <form action="/submit-contact" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <p></p>
+  <%- include('partials/footer') %>
+
+</body>
+</html>
